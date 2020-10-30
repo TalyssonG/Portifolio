@@ -235,9 +235,9 @@ header {
 .conhecimentos {
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(15, 1fr);
   grid-template-rows: repeat(6, 6rem);
-  row-gap: 0.5rem;
+  row-gap: 0.3rem;
 }
 
 .conhecimento:nth-child(1) {
@@ -292,29 +292,36 @@ header {
 .conhecimento-header {
   display: flex;
   align-items: center;
-  color: #4b4b4b;
+  color: #6a3093;
+  margin:90px;
+
+
 }
 
 .conhecimento-header i {
   font-size: 2.5rem;
+  
 }
 
 .conhecimento-header h3 {
   font-family: var(--font-secundary);
   font-size: 2rem;
   padding-left: 1rem;
+  
 }
 
 .conhecimento-text {
   font-family: var(--font-secundary);
-  margin-top: 1rem;
+  margin-top: 2rem;
+
 }
 
 .conhecimentos-img-wrapper {
   grid-column: 7 / 11;
-  grid-row: 2 / 6;
+  grid-row: 1 / 6;
   width: 80%;
   height: 80%;
+  
 }
 
 .conhecimentos-img-wrapper img {
