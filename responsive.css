@@ -1,0 +1,33 @@
+@media (max-width: 1092px) {
+    .conhecimentos-img-wrapper img {
+        width: 90%;
+        height: 90%;
+        margin-left: 40px;
+    }
+
+    .conhecimentos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content {
+        flex-direction: column-reverse;
+    }
+
+    .footer-content p {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 914px) {
+    .projetos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 10px 0px;
+    }
+}

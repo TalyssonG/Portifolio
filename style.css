@@ -15,8 +15,13 @@
   --font-action: "Muli", serif;
 }
 
+
 html{
   scroll-behavior: smooth;
+}
+
+.container {
+  min-width: 425px;
 }
 
 .hamburguer {
@@ -585,6 +590,7 @@ header {
 footer{
   width: 100%;
   height: 7rem;
+  padding: 50px 0px;
   background-color: #17181b;
   display: flex;
   justify-content: center;
@@ -594,6 +600,7 @@ footer{
 .footer-content{
   width: 60%;
   display: flex;
+  
   justify-content: space-between;
 }
 
