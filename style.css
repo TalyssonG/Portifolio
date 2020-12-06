@@ -9,19 +9,10 @@
   text-decoration: none;
 }
 
-#Minha-foto{
-  width: 190px;
-  height: 190px;
-  border-radius: 100%;
-  background-image: url(./imagens/foto4.jpg);
-  background-repeat: no-repeat;
-  position: absolute;
-  left:30%;
-  top:8%;
-  z-index: 1;
 
   
-}
+
+
 :root {
   --font-primary: "Baloo Da 2", serif;
   --font-secundary: "Josefin Slab", serif;
