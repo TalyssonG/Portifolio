@@ -10,8 +10,6 @@
 }
 
 
-  
-
 
 :root {
   --font-primary: "Baloo Da 2", serif;
@@ -132,22 +130,34 @@ header {
 
 .banner h1 {
   color: #ffffff;
-  font-size: 3.5rem;
-  font-family: var(--font-primary);
+  font-size: 3rem;
+  font-family: 'Krona One', sans-serif;
   font-weight: 200;
   text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
   line-height: 3.5rem;
   margin-bottom: 2rem;
   opacity: 0;
   animation: moveBanner 1s 0.5s forwards;
-}
 
-.banner p {
-  font-family: 'Roboto', sans-serif;
-  color: #fff;
+}
+.banner h2 {
+  font-family: 'Fira Mono', monospace;
+  color:#b45af5;
   font-size: 2rem;
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
   margin-bottom: 2rem;
+  opacity: 0;
+  animation: moveBanner 1s 0.7s forwards;
+
+}
+
+
+.banner p {
+  font-family: 'Fira Mono', monospace;
+  color:#b45af5;
+  font-size: 2rem;
+  text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
   opacity: 0;
   animation: moveBanner 1s 0.7s forwards;
 }
@@ -157,13 +167,21 @@ header {
   color: #ffff;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  background:#06d166;
+  background: #6a3093;
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  background: linear-gradient(to left, #a044ff, #6a3093);
   padding: 1rem 3rem;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   opacity: 0;
   animation: moveBanner 1s 0.9s forwards;
+}
+
+.banner button:hover {
+  background: -webkit-linear-gradient(to right, #ba78fc, #604077);
+  background: linear-gradient(to left, #a044ff, #3e155c);
+  opacity: 50%;
 }
 
 @keyframes moveBanner {
@@ -237,6 +255,65 @@ header {
 
 .social-media i:hover {
   background-color: #a044ff;
+}
+
+/*Skills*/
+#skil{
+  font-family: 'Poppins', sans-serif;
+}
+.skills__container{
+  row-gap: 2rem;
+  text-align: center;
+}
+.skills__subtitle{
+  margin-bottom: var(--mb-2);
+}
+.skills__text{
+  margin-bottom: var(--mb-4);
+}
+.skills__data{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
+  border-radius: .5rem;
+  box-shadow: 0 4px 25px rgba(14,36,49,.15);
+}
+.skills__icon{
+  font-size: 2rem;
+  margin-right: var(--mb-2);
+  color: var(--first-color);
+}
+.skills__names{
+  display: flex;
+  align-items: center;
+}
+.skills__bar{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
+}
+.skills__html{
+  width: 95%;
+}
+.skills__css{
+  width: 85%;
+}
+.skills__js{
+  width: 65%;
+}
+.skills__ux{
+  width: 85%;
+}
+.skills__img{
+  border-radius: .5rem;
 }
 
 .conhecimentos {
@@ -358,7 +435,7 @@ header {
 }
 
 .card-img-wrapper img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
   border-radius: 0.5rem;
@@ -384,14 +461,19 @@ header {
   font-family: var(--font-primary);
   font-size: 2rem;
   font-weight: 500;
-  color: #eee;
+  color: #fff;
+
 }
 
 .card-info h3 {
-  font-family: var(--font-action);
+  font-family: 'Poppins', sans-serif;
   font-weight: bolder;
-  color: #ff4081;
-  margin-bottom: 1.5rem;
+  color: #fff ;
+  margin-top: 4rem;
+  background-color: #0e0d0e;
+  border-radius: 1rem;
+  padding:1rem;
+  font-size: 1rem;
 }
 
 .card-info p {
@@ -411,6 +493,14 @@ header {
   border-radius: 0.5rem;
   border: none;
   box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.4);
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn:hover{
+  background: -webkit-linear-gradient(to right, #ba78fc, #b176db);
+  background: linear-gradient(to left, #a044ff, #601696);
+  opacity: 50%;
 }
 
 .card-info button {
@@ -522,74 +612,6 @@ header {
   box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
 }
 
-.preenchido{
-    pointer-events: none;
-}
-
-.sessao-orcamento{
-  width: 100%;
-  height: 100vh;
-  background: url("./imagens//bg-orcamento.jpg");
-  object-fit: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.orcamento-wrapper{
-  width: 60%;
-  height: 80%;
-  background-color: #ffffff99;
-  border-radius: 10px;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-  position: relative;
-}
-
-.sessao-orcamento h1{
-  position: absolute;
-  top: -2.5rem;
-  left: 2rem;
-  background: #6a3093;
-  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
-  background: linear-gradient(to left, #a044ff, #6a3093);
-  padding: 0 3rem;
-  color: #fff;
-  font-family: var(--font-primary);
-  font-size: 3rem;
-  font-weight: lighter;
-  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-}
-
-.sessao-orcamento form{
-  margin: 4rem;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 2rem;
-  row-gap: 2rem;
-}
-
-.sessao-orcamento label{
-  font-family: var(--font-action);
-  font-size: 1.5rem;
-}
-
-.sessao-orcamento input[type="number"]{
-  font-family: var(--font-secundary);
-  width: 4rem;
-  font-size: 2rem;
-  outline: none;
-  border-radius: 10px;
-  border: none;
-  padding: 0.3rem;
-}
-
-.btn-orcamento{
-  text-transform: uppercase;
-  padding: 1rem;
-  cursor: pointer;
-  grid-column: 2;
-}
 
 footer{
   width: 100%;

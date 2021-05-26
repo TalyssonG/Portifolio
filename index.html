@@ -1,213 +1,241 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="imagens/android-icon-72x72.png" />
-    <link rel="stylesheet" href="imagens/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-32x32.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="imagens/android-icon-72x72.png" />
+  <link rel="stylesheet" href="imagens/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-32x32.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100&display=swap"
+    class="description" class="expense" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'>
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="responsive.css">
+
+  <title>Portfólio</title>
+</head>
+
+<body>
 
 
-    <link rel="stylesheet" href="responsive.css">
-    <title>Portfólio</title>
-  </head>
-  <body>
+  <div class="container">
 
- 
-    <div class="container">
+    <div class="hamburguer">
+      <div class="line" id="line1"></div>
+      <div class="line" id="line2"></div>
+      <div class="line" id="line3"></div>
+      <span>fechar</span>
+    </div>
 
-        <div class="hamburguer">
-          <div class="line" id="line1"></div>
-          <div class="line" id="line2"></div>
-          <div class="line" id="line3"></div>
-          <span>fechar</span>
-        </div>  
+    <header id="home">
+      <div class="img-wrapper">
+        <img src="imagens/banner2.jpg" alt="">
+      </div>
+      <div class="banner">
 
-        <header id="home">
-            <div class="img-wrapper">
-                <img src="imagens/pexels-danny-meneses-943096.jpg" alt="">
+        <p id="t2">Olá, meu nome é </p>
+        <h1 id="ti"> Talysson Gadêlha </h1>
+        <h2 id="t3">Desenvolvedor front end</h2>
+        <a href="https://www.linkedin.com/in/talysson-gad%C3%AAlha-a174561b3/">
+          <button>Mais sobre</button>
+        </a>
+      </div>
+
+      <div>
+        <img src="./imagens/conhecimentos.png" alt="">
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav>
+        <ul class="menu">
+          <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+          <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
+          <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
+
+        </ul>
+      </nav>
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/talysson-gad%C3%AAlha-a174561b3/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/TalyssonG"><i class="fab fa-github-alt"></i></a>
+        <a href="https://www.instagram.com/talysson.gadelha/"><i class="fab fa-instagram"></i></a>
+      </div>
+    </aside>
+
+    <!--Conhecimentos -->
+    <section class="sessao-conhecimentos" id="conhecimentos">
+      <div class="sessao-header">
+        <h1>Conhecimentos</h1>
+      </div>
+
+      
+
+        <div class="skills__container bd-grid">          
+            <div id="skil">  
+                <p class="skills__text">
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-html5 skills__icon'></i>
+                        <span class="skills__name">HTML5</span>
+                    </div>
+                    <div class="skills__bar skills__html">
+
+                    </div>
+                    
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-css3 skills__icon'></i>
+                        <span class="skills__name">CSS3</span>
+                    </div>
+                    <div class="skills__bar skills__css">
+                        
+                    </div>
+                    
+                </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-javascript skills__icon' ></i>
+                        <span class="skills__name">JAVASCRIPT</span>
+                    </div>
+                    <div class="skills__bar skills__js">
+                        
+                    </div>
+                    
+                </div>
+                <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-react skills__icon' ></i>
+                      <span class="skills__name">REACT</span>
+                  </div>
+                  <div class="skills__bar skills__js">
+                      
+                  </div>
+                  
+              </div>
+                <div class="skills__data">
+                    <div class="skills__names">
+                        <i class='bx bxl-bootstrap skills__icon'></i>
+                        <span class="skills__name">BOOTSTRAP</span>
+                    </div>
+                    <div class="skills__bar skills__ux">    
+                    </div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__names">
+                      <i class='bx bxl-git skills__icon'></i>
+                      <span class="skills__name">GIT</span>
+                  </div>
+                  <div class="skills__bar skills__ux">    
+                  </div>
+              </div>
+
+
             </div>
-            <div class="banner">
-                <h1 id="ti">Web Developer & graphic designer</h1>
-                <p id="t2">Talysson Gadêlha Lopes</p>
-                
-                <a href="https://github.com/TalyssonG">
-                <button>Mais sobre</button>
-                </a>
-            </div>
-
-            <div>
-              <img src="./imagens/conhecimentos.png" alt="">
-            </div>
-        </header>
-
-        <aside class="sidebar">
-          <nav>
-            <ul class="menu">
-              <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-              <li class="menu-item"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
-              <li class="menu-item"><a href="#projetos" class="menu-link">Projetos</a></li>
-              <li class="menu-item"><a href="api.whatsapp.com/send?phone=5585991553322&text=Bem+vindo%28a%29+TGDesign" class="menu-link">Contato</a></li>
-             
-            </ul>
-          </nav>
-          <div class="social-media">
-            <a href="https://www.facebook.com/talysson.gadelha"><i class="fab fa-facebook"></i></a>
-            <a href="https://github.com/TalyssonG"><i class="fab fa-github-alt"></i></a>
-            <a href="https://www.instagram.com/talysson.gadelha/"><i class="fab fa-instagram"></i></a>
-          </div>
-        </aside>
-
-        <section class="sessao-conhecimentos" id="conhecimentos">
-          <div class="sessao-header">
-            <h1>Conhecimentos</h1>
-          </div>
-          <div class="conhecimentos">
-            <div class="conhecimento">
-              <div class="conhecimento-header">
-                <i class="fab fa-html5"></i>
-                <h3>HTML</h3>
-              </div>
-
-              <div class="conhecimento-text">
-                <p></p>
-              </div>
-            </div>
-
-            <div class="conhecimento">
-              <div class="conhecimento-header">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS</h3>
-              </div>
-              <div class="conhecimento-text">
-                <p></p>
-              </div>
-            </div>
-
-            <div class="conhecimento">
-              <div class="conhecimento-header">
-                <i class="fas fa-pencil-alt"></i>
-                <h3>Design</h3>
-              </div>
-              <div class="conhecimento-text">
-                <p></p>
-              </div>
-            </div>
-
-             
-            <div class="conhecimento">
-              <div class="conhecimento-header">
-                <i class="fab fa-js"></i>
-                <h3>Javascript</h3>
-              </div>
-              <div class="conhecimento-text">
-                <p>
-                </p>
-              </div>
-            </div>
-            <div class="conhecimento">
-              <div class="conhecimento-header">
-                <i class="fab fa-bootstrap"></i>
-                <h3>Bootstrap</h3>
-              </div>
-              <div class="conhecimento-text">
-                <p></p>
-              </div>
-            </div>
-            <div class="conhecimento">
-              <div class="conhecimento-header">
-                <i class="fab fa-github"></i>
-                <h3>Git e GitHub</h3>
-              </div>
-              <div class="conhecimento-text">
-                <p></p>
-              </div>
-            </div>
-
             
-            
-          </div>
-        </section>
-
-        <div class="sessao-projetos" id="projetos">
-          <div class="sessao-header">
-            <h1>Projetos</h1>
-          </div>
-          <div class="projetos">
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="imagens/tt.jpg" alt="imagem do projeto ToDo" />
-              </div>
-              <div class="card-info">
-                <h2>HMTL</h2>
-                <h3>CSS</h3>
-                <h4>JAVASCRIPT</h4>
-                <p></p>
-
-                <a href="https://www.instagram.com/devindev.br">
-                <button class="btn">Ver mais</button>
-                </a>
-
-              </div>
+            <div>              
+                <img src="assets/img/work3.jpg" alt="" class="skills__img">
             </div>
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="imagens/sorveteria1 (2).png" alt="imagem do projeto Maratona" />
-              </div>
-              <div class="card-info">
-                <h2>PHOTOSHOP</h2>
-                <H3>BANNER</H3>
-                
-                <p></p>
-                <a href="https://www.instagram.com/tgdesigner__">
-                <button class="btn">Ver mais</button>
-               </a>
-              
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-img-wrapper">
-                <img src="imagens/89223832-dd796380-d5ad-11ea-9a39-fc852538ca13.png" alt="imagem do projeto Casa Bela" />
-              </div>
-              <div class="card-info">
-                <h2>HTML</h2>
-                <h3>CSS</h3>
-                <H4>JAVASCRIPT</H4>
-                <p></p>
+        </div>
+    
 
-                <a href="https://www.instagram.com/devindev.br">
-                <button class="btn">PROFFY</button>
+     
+      <!--Projetos -->
+      <div class="sessao-projetos" id="projetos">
+        <div class="sessao-header">
+          <h1>Projetos</h1>
+        </div>
+        <div class="projetos">
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="imagens/destaques/destaque2.png" alt="imagem do projeto Todo" />
+            </div>
+            <div class="card-info">
+              <h2>Podcastr</h2>
+              <h3>The best for you to hear. <br> ⬤ ReactJS <br>⬤ Typescript<br>⬤ Next.js</h3>
+
+
+              <a href="https://github.com/TalyssonG/podcastrnext">
+                <button class="btn">Ver mais</button>
               </a>
 
-              </div>
             </div>
           </div>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="imagens/destaques/destaque1.png" alt="imagem do projeto Maratona" />
+            </div>
+            <div class="card-info">
+              <h2>JobsCalc</h2>
+              <H3>JobsCalc is a calculation estimation application for freelance projects.
 
-        </section>
+              </H3>
 
-        <!---Contato-->
-        <footer>
-          <div class="footer-content">
-            <p>
-              Copyright &copy; 2020, ETECIA DS - Todos os diretos reservados -
-              Portifólio profissional 
-            </p>
-            <div class="social-list">
-              <ul>
-                <li><a href="https://www.facebook.com/talysson.gadelha"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://www.instagram.com/tgdesigner__/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://github.com/TalyssonG"><i class="fab fa-github"></i></a></li>
-              </ul>
+              <p></p>
+              <a href="https://github.com/TalyssonG/JobsCalc">
+                <button class="btn">Ver mais</button>
+              </a>
+
             </div>
           </div>
-        </footer>
-        <a href="#home" id="link-topo">
-          <i class="fas fa-arrow-up"></i>
-        </a>
-    </div>
-   </body>
+          <div class="card">
+            <div class="card-img-wrapper">
+              <img src="imagens/destaques/destaque3.png" alt="imagem do projeto Casa Bela" />
+            </div>
+            <div class="card-info">
+              <h2>E-Sports</h2>
+              <h3>Best sports products!
+                <br> ⬤ Html, CSS <br>⬤ Bootstrap<br>⬤ PHP
+              </h3>
 
-   <script src="script.js"></script>
+              <p></p>
+
+              <a href="https://github.com/TalyssonG/E-Sports">
+                <button class="btn">Ver mais</button>
+              </a>
+
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <!---Contato-->
+    <footer>
+      <div class="footer-content">
+        <p>
+          Copyright &copy; 2021, ETECIA DS - Todos os diretos reservados -
+          Portifólio profissional
+        </p>
+        <div class="social-list" id="contato">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/talysson-gad%C3%AAlha-a174561b3/"><i
+                  class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/talyssongadelha"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://github.com/TalyssonG"><i class="fab fa-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <a href="#home" id="link-topo">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+
+ 
+</body>
+
+<script src="script.js"></script>
+
 </html>
